@@ -1,22 +1,31 @@
 doctype html
 html
     head
-        title= title
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        meta(name="description" content='东莞市飞拓精密有限公司，主营铝材定制，铝材开模,铝材加工,CNC加工,铝型材加工，精密五金冲压件，CNC铝制品加工,铝挤压定做,铝挤压开模,铝挤压加工，铝型材表面处理，铝型材壳体，飞拓专注各类铝制品的研发生产，并主要运用于音响手机的功放功能等（联系飞拓：13712667373）。')
+        meta(name="keywords" content='东莞铝材定制，铝材开模,铝材加工,CNC加工,铝型材加工，精密五金冲压件，CNC铝制品加工,铝挤压定做,铝挤压开模,铝挤压加工，铝型材表面处理，铝型材壳体')
+        title 铝合金面板_铝制品加工_精密五金冲压件_东莞市飞拓精密机械有限公司
         link(rel="shortcut icon", href="/images/siteicon.png")
         link(rel='stylesheet', href='/stylesheets/main.css')
         block stylesheet
     body
-        header.centerBox
-            .log 123132
-            nav 123123
+        header
+            .hdcon.centerBox
+                img.log(src="/images/logo.png")
+                nav
+                    a.active(href="/") 网站首页
+                    a(href="") 关于我们
+                    a(href="") 产品展示
+                    a(href="") 新闻咨询
+                    a(href="") 联系我们
 
         block content
 
         footer
-            .ft-con.centerBox
+            .ftcon.centerBox
                 .fleft
                     .navlist
-                        a(href="") 网站首页
+                        a(href="/") 网站首页
                         span |
                         a(href="") 关于我们
                         span |
@@ -30,13 +39,15 @@ html
                     p 联系地址：XXX省XXX市XXX县XXX路XXX号
                     p.mt
                     p ©2018 - 版权所有
-                    p 手机版 |本站使用凡科建站搭建 | 管理登录
+                    p 手机版 | 本站 | 管理登录
 
                 .fright
                     .hotline
                         p.hotTilte 全国客户服务热线</br>Customer Hotline
                         p.hotCon 000-000-0000
                     .search
-                        
+                        input(type="text" placeholder="请输入搜索的内容...")
+                        span 搜索
 
+        script(src="/lib/js/jquery.min.js")
         block javascript
