@@ -1,10 +1,9 @@
 
 var swiper = new Swiper('.swiper-banner', {
-    // direction: 'vertical',
     loop: true,
     autoplay: true,
-    effect: 'cube',
     grabCursor: true,
+    effect: 'cube',
     cubeEffect: {
         shadow: true,
         slideShadows: true,

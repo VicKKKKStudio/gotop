@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "set PORT=9991 && node ./bin/www",
-    "super": "set PORT=9991 && supervisor ./bin/www"
+    "start": "node ./bin/www",
+    "super": "supervisor ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",

@@ -19,3 +19,117 @@
         background: #fff;
     }
 }
+
+.showlist {
+    height: 150px;
+}
+
+.abstract {
+    border-top: 1px solid #dcdcdc;
+    background: #F8F8F8;
+
+    .abcon {
+        padding: 70px 0;
+        font-size: 0;
+
+        .warp {
+            background: #fff;
+            border: 1px solid #e7e7e7;
+            padding: 10px 20px;
+
+            h4 {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 10px;
+                color: #1e50ae;
+            }
+
+            &.left {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 18px;
+                width: 520px;
+
+                ul {
+                    height: 224px;
+                    overflow: hidden;
+
+                    li {
+                        line-height: 44px;
+                        height: 44px;
+                        border-bottom: 1px dashed #e5e5e5;
+    
+                        &:last-child {
+                            border-bottom: none;
+                        }
+    
+                        a {
+                            span.date {
+                                float: right;
+                            }
+    
+                            &:hover {
+                                color: #1e50ae;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.right {
+                display: inline-block;
+                vertical-align: top;
+                width: 478px;
+
+                .wrcon {
+                    font-size: 0;
+                    height: 224px;
+                    overflow: hidden;
+
+                    img {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 224px;
+                        height: 224px;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 244px;
+                        height: 224px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        
+                        span {
+                            overflow : hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 8;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+            }
+
+            &.bottom {
+                margin-top: 30px;
+
+                p {
+                    line-height: 30px;
+                    font-size: 16px;
+                    color: #1e50ae;
+
+                    a {
+                        margin-right: 20px;
+
+                        &:hover {
+                            color: #1e50ae;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
