@@ -10,6 +10,7 @@ var swiper = new Swiper('.swiper-banner', {
         shadowOffset: 20,
         shadowScale: 0.94,
     },
+    speed: 2000,
     pagination: {
         el: '.swiper-pagination',
     },
