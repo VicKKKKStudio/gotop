@@ -1,16 +1,17 @@
 extends layout
 
 block stylesheet
+    link(rel="stylesheet", href="/stylesheets/subpub.css")
     link(rel="stylesheet", href="/stylesheets/about.css")
 
 block content
     .pageban
         img(src="/images/pageban/about.jpg")
-    
-    .about
-        .aboutwrap.centerBox
-            .aboutleft
-                .aboutlc.top
+
+    .subpub
+        .subwarp.centerBox
+            .subleft
+                .slitem.info.bot
                     h3
                         span 联系方式 Contact
                     ul
@@ -18,9 +19,9 @@ block content
                         li 手机号码：130000000
                         li 联系邮箱：contact@fkadjkhsf.co
                         li 联系电话：020-000000  
-                        li 联系地址：XXX省XXX市XXX县XXX路 
+                        li 联系地址：XXX省XXX市XXX县XXX路
 
-                .aboutlc.bot
+                .slitem.list
                     h3
                         span 新闻资讯New
                     ul
@@ -35,13 +36,14 @@ block content
                         li 
                             a(href="") 运行中的干式变压器需要进行立即停电的条件是什么
 
-            .aboutright
+
+            .subright
                 nav
                     span 当前位置：&nbsp;
                     a(href="/") 网站首页
                     span &nbsp;&gt;&nbsp;
                     span.active 关于我们
-                .aboutcon
+                .about
                     img(src="/images/pageban/about.jpg", alt="", srcset="")
                     p ××××有限公司是一家专业变压器的公司，集销售、技术、服务于一体，公司坚持“品质服务，合作互赢”的宗旨，高品味低价位、诚信经营、互惠互利的经营理念，围绕“精益求精、精简高效”的经营方针，自成立以来以良好的产品质量和优质的售后服务赢得了社会各企业的支持。并建立的良好的合作关系。
                     p 产品包括110KV、220KV大型超高压变压器和35KV以下各种干式变压器、油浸式变压器、非晶合金变压器、预装式变电站、光伏/风力变压器、有载调容变压器、地理变压器、高过载电力变压器、除尘变压器、船用变压器、SVG连接变压器、 SVR线路自动调压器、卷铁心变压器、斯柯特(Scott)变压器、 ZP(T)S型/ZPSC型/ZPSG-W型多绕组移相整流变压器以及各种规格箱变、电炉变、整流变、矿用变压器等特种变压器。
