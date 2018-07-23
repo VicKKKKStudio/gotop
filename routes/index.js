@@ -21,10 +21,10 @@ router.get('/product', function(req, res, next) {
 
 /* GET news page. */
 router.get('/news', function(req, res, next) {
-    res.render('news/list', newsData({
+    res.render('news/list', Object.assign({ pagerLink: '/news?page=' }, newsData({
         pageNum: req.query.page || 1,
         size: req.query.size || 6
-    }));
+    })));
 });
 
 /* GET news item page. */
