@@ -25,17 +25,10 @@ block content
                     h3
                         span 新闻资讯 New
                     ul
-                        li 
-                            a(href="") 变压器日常维护
-                        li 
-                            a(href="") 干式变压器的接线方法 这些你都了解吗
-                        li 
-                            a(href="") 浅析中国干式变压器的发展趋势
-                        li 
-                            a(href="") 干式变压器怎样通过各种声音的异常来判断故障
-                        li 
-                            a(href="") 运行中的干式变压器需要进行立即停电的条件是什么
-
+                        - newsInfo.forEach((item, index) => {
+                            li
+                                a(href="/news-item?index=#{index + (pageNum -1) * size}")= item.title
+                        - })
 
             .subright
                 nav

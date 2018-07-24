@@ -1,12 +1,26 @@
 extends ../layout
 
 block stylesheet
-    link(rel="stylesheet", href="/stylesheets/subpub.css")
     link(rel="stylesheet", href="/stylesheets/news.css")
 
 block content
     .pageban
         img(src="/images/pageban/news.jpg")
 
+    .newsitem
+        .tag
+            nav.centerBox
+                | 您当前的位置: 
+                a(href="/") 网站首页
+                | &gt;
+                a(href="/news?page") 新闻资讯
+                | &gt;
+                span= newsInfo.title
+        
+        .article
+            .centerBox
+                p.title= newsInfo.title
+                p.date 发表时间：#{newsInfo.date}
+                .content!= newsInfo.content
 
 block javascript

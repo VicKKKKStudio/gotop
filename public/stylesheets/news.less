@@ -1,3 +1,4 @@
+// 新闻列表
 .news {
 
     .newlist {
@@ -61,4 +62,65 @@
     .pagerbox {
         text-align: center;
     }
+}
+
+// 新闻文章
+.newsitem {
+
+    .tag {
+        background: #f8f8f8;
+        border-bottom: 1px solid #eee;
+
+        nav {
+            line-height: 40px;
+            text-align: right;
+            color: #999;
+
+            a,span {
+                color: #666;
+                margin: 0 5px;
+            }
+
+            a:hover {
+                color: #1e50ae;
+            }
+        }
+    }
+
+    .article {
+        padding: 50px 0 100px;
+
+        .title {
+            font-size: 28px;
+            color: #333;
+            line-height: 40px;
+        }
+    
+        .date {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            color: #999;
+            border-bottom: 1px solid #eee;
+        }
+    
+        .content {
+            font-size: 16px;
+            line-height: 2.2;
+            color: #666;
+
+            h6 {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            span {
+                color: #1e50ae;
+            }
+        }
+    }
+
 }

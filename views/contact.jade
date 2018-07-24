@@ -26,14 +26,14 @@ block content
                         li 
                             a(href="") 成套开关柜
 
-                .slitem.list.bot
+                .slitem.list
                     h3
-                        span 热点资讯New
+                        span 新闻资讯 New
                     ul
-                        li 
-                            a(href="") 公司新闻
-                        li 
-                            a(href="") 行业资讯
+                        - newsInfo.forEach((item, index) => {
+                            li
+                                a(href="/news-item?index=#{index + (pageNum -1) * size}")= item.title
+                        - })
 
             .subright
                 nav

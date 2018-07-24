@@ -5,14 +5,25 @@
     - } else {
         a.paging(href="#{pagerLink}#{pageNum - 1}") 上一页
     - }
+
     //- 选择页数
+    - var signNum = 3;
+    - if (pageNum > signNum) {
+        span.paging ...
+    - }
     - for (let i = 1; i <= pageCount; i++) {
         - if (pageNum == i) { // 显示当前页数
             span.pagact= i
         - } else { // 显示其他页数
-            a.paging(href="#{pagerLink}#{i}")= i
+            - if (i <= +pageNum + signNum && i >= +pageNum - signNum) {
+                a.paging(href="#{pagerLink}#{i}")= i
+            - }
         - }
     - }
+    - if (pageNum < pageCount - signNum) {
+        span.paging ...
+    - }
+
     //- 向下翻页
     - if (pageNum >= pageCount) {
         span.pagdis 下一页

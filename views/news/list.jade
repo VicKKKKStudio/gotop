@@ -26,15 +26,6 @@ block content
                         li 
                             a(href="") 成套开关柜
 
-                .slitem.list.bot
-                    h3
-                        span 新闻资讯 New
-                    ul
-                        li 
-                            a(href="") 公司新闻
-                        li 
-                            a(href="") 行业资讯
-
                 .slitem.info
                     h3
                         span 联系方式 Contact
@@ -63,8 +54,8 @@ block content
                                     span.year #{year}
                                 .right
                                     p.title
-                                        a(href="/news-item?index=#{index}")= item.title
-                                    p.con= item.content                            
+                                        a(href="/news-item?index=#{index + (pageNum -1) * size}")= item.title
+                                    p.con= item.describe                            
                         - });
 
                     .pagerbox
